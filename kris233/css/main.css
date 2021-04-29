@@ -51,7 +51,7 @@ h2{
 
 h3{
     text-align: center;
-    margin: 20px 0 10px 0;
+    margin: 20px 0 0px 0;
     color: #373f51;
     font-weight: 400;
 }
@@ -92,15 +92,16 @@ h3{
 }
 
 #self-name hr{
-    background-color: #373f51;
+    background-color: #373f51;  
     border: 1px solid #373f51;
     height:24px;
     margin: 0 4px;
 }
 
-/* #self-description li{
+#self-description li{
     list-style-type: disc;
-} */
+    font-size: 0.2em;
+}
 /* work */
 
 
@@ -117,6 +118,11 @@ h3{
     color: #888;
     border-bottom: 1px dashed #373f51;
 }
+
+/* .work-detail{
+    font-size: 0.2em;
+    text-decoration: underline;
+} */
 
 /* pillX */
 #pillX-image{
@@ -145,6 +151,7 @@ h3{
     align-items: center;
     padding: 8px 0;
     font-size: 12px;
+    
 }
 
 .skill-bar>div:first-child{
@@ -162,6 +169,7 @@ h3{
     height: 6px;
     background-color: #373f51;
     border: 1px solid #373f51;
+    border-radius: 3px 3px 3px 3px;
 }
 
 .not{
@@ -169,4 +177,46 @@ h3{
     margin-right: 3%;
     height: 6px;
     border: 1px solid #888;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.work-detail{
+    width: 90%;
+    margin: 6px 5% 10px 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.work-detail a div{
+    font-size: 0.2em;
+    text-decoration: underline;
+}
+
+
+.element {
+	max-height:0;
+	overflow:hidden;
+	transition:max-height .3s;
+}
+:checked ~ .element {
+	max-height:666px;
+}
+input[type="checkbox"] {
+	position:absolute;
+	clip:rect(0 0 0 0);
+}
+:checked ~ .check-in {
+	display:none;
+}
+:checked ~ .check-out {
+	display:inline-block;
+}
+.check-out {
+	display:none;
+}
+.check-in,.check-out {
+	color:#34538b;
+	cursor:pointer;
 }
