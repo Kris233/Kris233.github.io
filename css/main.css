@@ -1,0 +1,231 @@
+body{
+    background-color: #D8DBE2;
+}
+
+#home-page {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #373f51;
+}
+
+#home-page * {
+	color: #D8DBE2;
+}
+
+.home-title {
+	font-size: 2em;
+	font-weight: 700;
+	margin: 30px;
+}
+
+.home-name {
+	font-size: 1.2em;
+}
+
+/*down-arrow*/
+
+.down-arrow {
+	position: absolute;
+	bottom: 30px;
+	width: 30px;
+}
+
+.down-arrow img {
+	width: 100%;
+}
+
+h2{
+    width: 100%;
+    text-align: center;
+    color: #373f51;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-size: 1.8em;
+}
+
+#h2height{
+    height: 24px;
+}
+
+h3{
+    text-align: center;
+    margin: 20px 0 0px 0;
+    color: #373f51;
+    font-weight: 400;
+}
+
+ /* about-me */
+ #about-me{
+    padding:40px 5%;
+}
+
+#self{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#selface{
+    width: 35%;
+}
+
+#selface img{
+    width: 80%;
+    margin: 12px 10%;
+}
+
+#self-description{
+    margin: 12px 0 12px 12px;
+}
+
+#self-name{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-bottom: 12px;
+}
+
+#self-name>div:first-child{
+    font-size:1.4em;
+}
+
+#self-name hr{
+    background-color: #373f51;  
+    border: 1px solid #373f51;
+    height:24px;
+    margin: 0 4px;
+}
+
+#self-description li{
+    list-style-type: disc;
+    font-size: 0.2em;
+}
+/* work */
+
+
+#work{
+    padding:0px 5% 24px 5%;
+    
+}
+
+#work img{
+    width: 100%;
+}
+
+.work-content{
+    color: #888;
+    border-bottom: 1px dashed #373f51;
+}
+
+/* .work-detail{
+    font-size: 0.2em;
+    text-decoration: underline;
+} */
+
+/* pillX */
+#pillX-image{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#pillX-image a{
+    width: 28%;
+    margin-right: 2%;
+}
+
+/* skill chart */
+.skill-name{
+    color: #373f51;
+    margin-top: 8px;
+    padding-left: 2px;
+    font-size: 14px;
+}
+
+.skill-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 12px;
+    
+}
+
+.skill-bar>div:first-child{
+    margin-right: 3%;
+    color: #888;
+}
+
+.skill-bar>div:last-child{
+    color: #888;
+}
+
+.get{
+    width: 8%;
+    margin-right: 3%;
+    height: 6px;
+    background-color: #373f51;
+    border: 1px solid #373f51;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.not{
+    width: 8%;
+    margin-right: 3%;
+    height: 6px;
+    border: 1px solid #888;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.work-detail{
+    width: 90%;
+    margin: 6px 5% 10px 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.work-detail a div{
+    font-size: 0.2em;
+    text-decoration: underline;
+}
+
+
+.element {
+	max-height:0;
+	overflow:hidden;
+	transition:max-height .3s;
+}
+:checked ~ .element {
+	max-height:666px;
+}
+input[type="checkbox"] {
+	position:absolute;
+	clip:rect(0 0 0 0);
+}
+:checked ~ .check-in {
+	display:none;
+}
+:checked ~ .check-out {
+	display:inline-block;
+}
+.check-out {
+	display:none;
+}
+.check-in,.check-out {
+	color:#34538b;
+	cursor:pointer;
+}
+
+#graphic-image{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    width: 70%;
+    margin: 0 13%;
+}
